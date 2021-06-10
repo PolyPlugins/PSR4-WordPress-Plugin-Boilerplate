@@ -36,4 +36,5 @@ dwsync.xml
 .CVS
 intermediate
 .idea
+plugin-name/vendor
 cache

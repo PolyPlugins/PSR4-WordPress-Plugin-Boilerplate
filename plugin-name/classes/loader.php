@@ -22,7 +22,7 @@
  * @author     Your Name <email@example.com>
  */
 
-namespace Company\Plugin_Name\Inc;
+namespace Company\Plugin_Name;
 
 if (!defined('ABSPATH')) exit;
 
