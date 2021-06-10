@@ -7,7 +7,7 @@ Feel free to submit PR's as we will be actively maintaining this while we use it
 **Note**: This is still a work in progress.
 
 **Bugs**:
-We are currently aware of the unexpected output on plugin activation and are working on a fix. We are also still cleaning up references to public which is now called frontend due to it causing conflicts with namespacing.
+We are currently aware of the unexpected output on plugin activation and are working on a fix.
 
 Original WordPress Plugin Boilerplate Readme
 
