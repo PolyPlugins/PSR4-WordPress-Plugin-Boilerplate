@@ -26,6 +26,7 @@
  */
 
 namespace Company\Plugin_Name;
+
 use Company\Plugin_Name\Inc\Activator;
 use Company\Plugin_Name\Inc\Deactivator;
 use Company\Plugin_Name\Inc\Loader;
@@ -78,13 +79,84 @@ class Plugin {
 	protected $version;
 
 	/**
+	 * The unique name of this plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The name used to uniquely identify this plugin.
+	 */
+  protected $plugin_name;
+
+	/**
+	 * The unique name for the admin menu.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The name used in the admin menu.
+	 */
+	protected $plugin_menu_name;
+
+	/**
+	 * The unique name for the plugins options.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The name used to uniquely identify this plugins options.
+	 */
+  protected $plugin_options_name;
+
+	/**
+	 * The path to the plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The path to the plugin.
+	 */
+  protected $plugin_path;
+
+	/**
 	 * The unique identifier of this plugin.
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      string    $plugin_name    The string used to uniquely identify this plugin.
+	 * @var      string    $plugin_slug    The string used to uniquely identify this plugin.
 	 */
-  protected $plugin_name;
+
+	/**
+	 * The path to the plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The path to the plugin.
+	 */
+  protected $plugin_slug;
+
+	/**
+	 * The slug but with _ instead of -
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The slug but with _ instead of -
+	 */
+  protected $plugin_slug_id;
+
+	/**
+	 * The plugin's options array
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The plugin's options array
+	 */
+  protected $options;
+
+	/**
+	 * The plugin's support link
+	 *
+	 * @since    1.0.0
+	 * @access   protected
+	 * @var      string    $plugin_slug    The plugin's options array
+	 */
+  protected $support;
 
 	/**
 	 * Define the core functionality of the plugin.
@@ -96,6 +168,18 @@ class Plugin {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
+
+		// Define Properties
+    $this->version = '1.0.0';
+    $this->plugin = __FILE__;
+    $this->plugin_name = 'WordPress Plugin Boilerplate';
+    $this->plugin_menu_name = 'WordPress Plugin Boilerplate';
+    $this->plugin_path = plugin_dir_path( $this->plugin );
+    $this->plugin_slug = dirname( plugin_basename( $this->plugin ) );
+    $this->plugin_slug_id = str_replace( '-', '_', $this->plugin_slug );
+    $this->plugin_options_name = $this->plugin_slug_id . '_options';
+    $this->plugin_options = get_option( $this->plugin_options_name );
+    $this->plugin_support = " <a href='http://example.com/support/' target='_blank'>Get Support</a>";
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -199,11 +283,7 @@ class Plugin {
 	}
 
 	/**
-	 * Begins execution of the plugin.
-	 *
-	 * Since everything within the plugin is registered via hooks,
-	 * then kicking off the plugin from this point in the file does
-	 * not affect the page life cycle.
+	 * Run the loader to execute all of the hooks with WordPress.
 	 *
 	 * @since    1.0.0
 	 */
@@ -219,7 +299,7 @@ class Plugin {
 	 * @return    string    The name of the plugin.
 	 */
 	public function get_plugin_name() {
-		return $this->plugin_name;
+		return $this->plugin_slug;
 	}
 
 	/**

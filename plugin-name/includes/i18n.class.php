@@ -27,6 +27,8 @@
 
 namespace Company\Plugin_Name\Inc;
 
+if (!defined('ABSPATH')) exit;
+
 class i18n {
 
 
