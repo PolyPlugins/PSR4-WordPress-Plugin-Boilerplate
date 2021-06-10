@@ -4,9 +4,9 @@ This is a fork of WordPress Plugin Boilerplate with Namespacing and Autoloading 
 
 Feel free to submit PR's as we will be actively maintaining this while we use it to develop plugins for our company. In the long run we plan to turn this into a plug and play solution with a lot of features out of the box which can be disabled by removing the classes, hence the autoloading.
 
-Note: This is still a work in progress.
+**Note**: This is still a work in progress.
 
-Bugs:
+**Bugs**:
 We are currently aware of the unexpected output on plugin activation and are working on a fix. We are also still cleaning up references to public which is now called frontend.
 
 Original WordPress Plugin Boilerplate Readme
