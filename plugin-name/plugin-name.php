@@ -279,7 +279,7 @@ class Plugin {
 	 * @return    string    The name of the plugin.
 	 */
 	public function get_plugin_name() {
-		return $this->plugin_slug;
+		return $this->plugin_name;
 	}
 
 	/**
