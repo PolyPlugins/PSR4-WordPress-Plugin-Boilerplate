@@ -20,7 +20,10 @@
  * @subpackage Plugin_Name/public
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Public {
+
+namespace Company\Plugin_Name\Inc;
+
+class Frontend {
 
 	/**
 	 * The ID of this plugin.

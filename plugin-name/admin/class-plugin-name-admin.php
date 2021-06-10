@@ -20,7 +20,10 @@
  * @subpackage Plugin_Name/admin
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Admin {
+
+namespace Company\Plugin_Name\Inc;
+
+class Admin {
 
 	/**
 	 * The ID of this plugin.

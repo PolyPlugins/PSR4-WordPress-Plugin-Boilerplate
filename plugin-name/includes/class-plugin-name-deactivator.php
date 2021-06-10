@@ -20,7 +20,10 @@
  * @subpackage Plugin_Name/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_Deactivator {
+
+namespace Company\Plugin_Name\Inc;
+
+class Deactivator {
 
 	/**
 	 * Short Description. (use period)

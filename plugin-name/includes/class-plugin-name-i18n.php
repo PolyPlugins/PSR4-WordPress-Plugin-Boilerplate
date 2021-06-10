@@ -24,7 +24,10 @@
  * @subpackage Plugin_Name/includes
  * @author     Your Name <email@example.com>
  */
-class Plugin_Name_i18n {
+
+namespace Company\Plugin_Name\Inc;
+
+class i18n {
 
 
 	/**
