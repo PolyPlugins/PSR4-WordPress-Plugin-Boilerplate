@@ -1,4 +1,8 @@
-# WordPress Plugin Boilerplate
+# WordPress Plugin Boilerplate Namespaced
+
+This is a fork of WordPress Plugin Boilerplate with Namespacing added and plans to make PSR-4 with autoloading. Namespacing is very useful in preventing conflicts between plugins while autoloading helps reduce load on the server.
+
+Feel free to submit PR's as we will be actively maintaining this while we use it to develop plugins for our company. In the long run we plan to turn this into a plug and play solution with a lot of features out of the box which can be disabled by removing the classes, hence the autoloading for future releases.
 
 A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.
 
