@@ -7,6 +7,7 @@ Feel free to submit PR's as we will be actively maintaining this while we use it
 Note: This is still a work in progress.
 
 Original WordPress Plugin Boilerplate Readme
+
 A standardized, organized, object-oriented foundation for building high-quality WordPress Plugins.
 
 ## Contents
