@@ -1,6 +1,6 @@
 # PSR-4 WordPress Plugin Boilerplate
 
-This is a fork of WordPress Plugin Boilerplate with Namespacing and Autoloading added. Namespacing is very useful in preventing conflicts between plugins while autoloading helps increase the permance of the application along with decreasing development times incurred from including files manually.
+This is a fork of WordPress Plugin Boilerplate with Namespacing and Autoloading added. Namespacing is very useful in preventing conflicts between plugins while autoloading helps increase the performance of the application along with decreasing development times incurred from including files manually.
 
 PSR-4 WordPress Plugin Boilerplate uses composer to generate the autoloading. Setup composer, cd into your plugin directory from terminal, and run `composer dump-autoload`. Anytime you add a new class under `/classes/` you will need to re-run this command. We've also added additional properties which can be passed as needed to other classes.
 
