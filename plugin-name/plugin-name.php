@@ -31,8 +31,6 @@ use Company\Plugin_Name\Loader;
 use Company\Plugin_Name\i18n;
 use Company\Plugin_Name\Frontend\Display;
 use Company\Plugin_Name\Backend\Options;
-use Company\Plugin_Name\Activator;
-use Company\Plugin_Name\Deactivator;
 
 if (!defined('ABSPATH')) exit;
 
@@ -40,24 +38,15 @@ require plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-name-activator.php
+ * This action is documented in classes/activator.php
  */
-function activate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/activator.class.php';
-	Activator::activate();
-}
+register_activation_hook( __FILE__, array( __NAMESPACE__ . '\Activator', 'activate' ) );
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-name-deactivator.php
+ * This action is documented in classes/deactivator.php
  */
-function deactivate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/deactivator.class.php';
-	Deactivator::deactivate();
-}
-
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
+register_deactivation_hook( __FILE__, array( __NAMESPACE__ . '\Deactivator', 'deactivate' ) );
 
 class Plugin {
 

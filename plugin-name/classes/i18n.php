@@ -10,7 +10,7 @@
  * @since      1.0.0
  *
  * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @subpackage Plugin_Name/classes
  */
 
 /**
@@ -21,7 +21,7 @@
  *
  * @since      1.0.0
  * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @subpackage Plugin_Name/classes
  * @author     Your Name <email@example.com>
  */
 
