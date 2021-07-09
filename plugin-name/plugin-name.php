@@ -162,16 +162,16 @@ class Plugin {
 	public function __construct() {
 
 		// Define Properties
-    $this->version = '1.0.0';
-    $this->plugin = __FILE__;
-    $this->plugin_name = 'WordPress Plugin Boilerplate';
-    $this->plugin_menu_name = 'WordPress Plugin Boilerplate';
-    $this->plugin_path = plugin_dir_path( $this->plugin );
-    $this->plugin_slug = dirname( plugin_basename( $this->plugin ) );
-    $this->plugin_slug_id = str_replace( '-', '_', $this->plugin_slug );
+    $this->version             = '1.0.0';
+    $this->plugin              = __FILE__;
+    $this->plugin_path         = plugin_dir_path( $this->plugin );
+    $this->plugin_slug         = dirname( plugin_basename( $this->plugin ) );
+    $this->plugin_slug_id      = str_replace( '-', '_', $this->plugin_slug );
+    $this->plugin_name         = __('WordPress Plugin Boilerplate', $this->plugin_slug);
+    $this->plugin_menu_name    = __('WordPress Plugin Boilerplate', $this->plugin_slug);
     $this->plugin_options_name = $this->plugin_slug_id . '_options';
-    $this->plugin_options = get_option( $this->plugin_options_name );
-    $this->plugin_support = " <a href='http://example.com/support/' target='_blank'>Get Support</a>";
+    $this->plugin_options      = get_option( $this->plugin_options_name );
+    $this->plugin_support      = '<a href="http://example.com/support/" target="_blank">' . __("Get Support", $this->plugin_slug) . '</a>';
 
 		$this->load_dependencies();
 		$this->set_locale();
