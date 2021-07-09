@@ -6,6 +6,9 @@ PSR-4 WordPress Plugin Boilerplate uses composer to generate the autoloading. Se
 
 Feel free to submit PR's as we will be actively maintaining this while we use it to develop plugins for our company. In the long run we plan to turn this into a plug and play solution with a lot of features out of the box which can be disabled by removing the classes, hence the autoloading.
 
+**NOTE**
+As of July 9 2021 we are working on new software which will give us a chance to use this and adjust accordingly. There may not be updates for a couple months, but we are also working on a Settings class which we haven't decided on if we were going to include in this repository or create a new one.
+
 
 **Original WordPress Plugin Boilerplate Readme Below**
 

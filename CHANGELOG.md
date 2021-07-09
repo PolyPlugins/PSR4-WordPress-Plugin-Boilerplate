@@ -1,5 +1,6 @@
 # Changelog
-* (12 June 2021). Converted to namespacing and added autoloading
+* (9 July 2021). Propery Translation and class file renames.
+* (12 June 2021). Converted to namespacing and added autoloading.
 * (3 July 2015). Flattened the folder structure so there is no .org repo parent folder.
 * (4 September 2014). Updating the `README` with Windows symbolic link instructions.
 * (3 September 2014). Updating the `README` to describe how to install the Boilerplate.
