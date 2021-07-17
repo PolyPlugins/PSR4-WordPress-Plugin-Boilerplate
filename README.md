@@ -9,7 +9,7 @@ Feel free to submit PR's as we will be actively maintaining this while we use it
 **UPDATES**  
 July 9th 2021 - We are working on new software which will give us a chance to use this and adjust accordingly. There may not be updates for a couple months, but we are also working on a Settings class which we haven't decided on if we were going to include in this repository or create a new one.
 
-July 17th 2021 - We've made a ton of progress with our [Settings Class for WordPress](https://github.com/PolyPlugins/Settings-Class-for-Wordpress) and have almost finished it. Once we put on the final touches, we'll be integrating it into this project as well.
+July 17th 2021 - We've made a ton of progress with our [Settings Class for WordPress](https://github.com/PolyPlugins/Settings-Class-for-Wordpress) and have almost finished it. Once we put on the final touches, we'll be integrating it into this project as well. It just makes sense logically for us, as we will actively be using this project for developing new software, so having everything in one place makes development simpler.
 
 
 **Original WordPress Plugin Boilerplate Readme Below**
