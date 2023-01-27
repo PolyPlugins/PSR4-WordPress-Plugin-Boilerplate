@@ -1,4 +1,5 @@
 # Changelog
+* (26 January 2023). Added additional boilerplate for Reusable Admin Panel
 * (9 July 2021). Propery Translation and class file renames.
 * (12 June 2021). Converted to namespacing and added autoloading.
 * (3 July 2015). Flattened the folder structure so there is no .org repo parent folder.
