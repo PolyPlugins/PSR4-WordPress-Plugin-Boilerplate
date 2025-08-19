@@ -1,0 +1,15 @@
+/*
+ * DO NOT CHANGE THIS FILE
+ * You can overwrite this via $this->config. Put a stylesheet somewhere in your plugin folder and link to it via the css key.
+ * Example: $this->config = array('css' => '/css/settings.css');
+ * This will also allow you to extend the settings class with custom css if you want to change more than colors, this way you aren't overwritting the settings class for all plugins using it.
+ * This will dequeue colors.css and replace it with your custom css file, so you will need to copy the below css to your new file to change the colors.
+ */
+ :root {
+  --settings-primary: #46BEA4;
+  --settings-secondary: #333;
+  --settings-bg: #fff;
+  --settings-fields-bg: #fff;
+  --settings-validation-bg: #ff0000;
+  --settings-border: #e2e2e2;
+}

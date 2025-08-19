@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Company\\Test_Plugin\\": "includes/classes/"
+    }
+  },
+  "scripts": {
+    "autoload": "composer dump-autoload"
+  },
+  "require": {
+    "polyplugins/settings-class-for-wordpress": "^3.0.0"
+  }
+}
