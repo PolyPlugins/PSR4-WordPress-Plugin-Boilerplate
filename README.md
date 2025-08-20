@@ -8,7 +8,7 @@ Feel free to submit PR's as we will be actively maintaining this while we use it
 
 # Update
 
-**August 19th 2025** - Implemented [Settings Class for Wordpress](https://github.com/PolyPlugins/Settings-Class-for-Wordpress) into the PSR-4 boilerplate. 'test-plugin' contains a boilerplate plugin that once you run `composer install` and install the plugin it will have a fully functional admin panel under Settings -> Test Plugin. It also has full translation support. We are currently working on a generator so you can easily build a plugin with the options you need.
+**August 20th 2025** - Implemented [Settings Class for Wordpress](https://github.com/PolyPlugins/Settings-Class-for-Wordpress) into the PSR-4 boilerplate. 'test-plugin' contains a boilerplate plugin that once you run `composer install` and install the plugin it will have a fully functional admin panel under Settings -> Test Plugin. It also has full translation support. You can also use our [Boilerplate Generator](https://www.polyplugins.com/settings-class-for-wordpress-boilerplate-generator/).
 
 **January 26th 2023** - Implemented [Reusable Admin Panel](https://wordpress.org/plugins/reusable-admin-panel/) into the PSR-4 boilerplate. 'plugin-name-reusable-admin-panel' contains a boilerplate plugin that once installed will have a fully functional admin panel under Settings -> Plugin Name.
 
